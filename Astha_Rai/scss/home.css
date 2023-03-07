@@ -1,0 +1,171 @@
+@keyframes rowSlide_mobile {
+  from {
+    right: 0vw;
+  }
+  to {
+    right: 300vw;
+  }
+}
+@keyframes rowSlide_min {
+  from {
+    right: 0vw;
+  }
+  to {
+    right: 100vw;
+  }
+}
+@keyframes rowSlide_med {
+  from {
+    right: 0vw;
+  }
+  to {
+    right: 300vw;
+  }
+}
+@keyframes rowSlide_max {
+  from {
+    right: 0vw;
+  }
+  to {
+    right: 300vw;
+  }
+}
+@keyframes introFade {
+  from {
+    filter: blur(10px);
+  }
+  to {
+    filter: blur(0px);
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media only all and (min-width: 0) {
+  body section#gallery {
+    height: 130vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    margin-bottom: 2.5vh;
+  }
+  body section#gallery div.row {
+    display: flex;
+    position: relative;
+    animation-name: rowSlide_mobile;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    width: 400vw;
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 22.5vh;
+    justify-content: space-between;
+  }
+  body section#gallery div.row:hover {
+    animation-play-state: paused;
+  }
+  body section#gallery div.row figure {
+    height: 22.5vh;
+    width: 50vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+  }
+  body section#gallery div.row figure div.overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: background-color 0.75s;
+    z-index: 1;
+  }
+  body section#gallery div.row figure div.overlay:hover {
+    background-color: transparent;
+  }
+  body section#gallery div.row figure img {
+    width: 150%;
+  }
+  body section#gallery div.slideRight {
+    animation-direction: alternate;
+  }
+  body section#gallery div.slideLeft {
+    animation-direction: alternate-reverse;
+  }
+  body section#gallery div#titleBanner {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 30vh;
+    text-shadow: 7.5px 5px rgba(0, 0, 0, 0.25);
+  }
+  body section#gallery div#titleBanner h1 {
+    font-size: 5rem;
+  }
+  body section#preview {
+    position: fixed;
+    top: 0;
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    transition: opacity 0.75s;
+    cursor: pointer;
+  }
+  body section#about {
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10vw;
+    margin: 2.5rem auto;
+  }
+  body section#about h3 {
+    font-size: 3rem;
+  }
+}
+@media only all and (min-width: 760px) {
+  body section#gallery {
+    height: 140vh;
+    margin-bottom: 4vh;
+  }
+  body section#gallery div.row {
+    width: 200vw;
+    animation-name: rowSlide_min;
+    height: 24vh;
+  }
+  body section#gallery div.row figure {
+    height: 24vh;
+    width: 25vw;
+  }
+}
+@media only all and (min-width: 1200px) {
+  body section#gallery {
+    height: 150vh;
+    margin-bottom: 2.5vh;
+  }
+  body section#gallery div.row {
+    animation-duration: 35s;
+    width: 200vw;
+    height: 27.5vh;
+  }
+  body section#gallery div.row figure {
+    height: 27.5vh;
+    width: 25vw;
+  }
+}/*# sourceMappingURL=home.css.map */

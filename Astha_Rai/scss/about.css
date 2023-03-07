@@ -1,0 +1,95 @@
+@media only all and (min-width: 0) {
+  body section#banner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  body section#banner div#bannerText {
+    width: 100%;
+    padding: 1.5rem 0;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  body section#banner div#bannerText h1 {
+    font-size: 4rem;
+    text-shadow: 7.5px 5px rgba(0, 0, 0, 0.25);
+  }
+  body section#about {
+    width: 100%;
+    padding: 0 10vw;
+    margin: 2.5rem auto;
+  }
+  body section#about h3 {
+    font-size: 2.5rem;
+  }
+  body section#about div#aboutContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.5rem;
+  }
+  body section#about div#aboutContent figure {
+    width: 100%;
+    margin: 1rem auto;
+    overflow: hidden;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body section#about div#aboutContent figure img {
+    width: 125%;
+  }
+  body section#about div#aboutContent div#aboutText h3 {
+    display: none;
+  }
+}
+@media only all and (min-width: 760px) {
+  body section#about div#aboutContent figure {
+    height: 20rem;
+    align-items: flex-start;
+  }
+  body section#about div#aboutContent figure img {
+    margin-top: -10rem;
+  }
+}
+@media only all and (min-width: 992px) {
+  body section#about div#aboutContent figure {
+    height: 30rem;
+  }
+}
+@media only all and (min-width: 1200px) {
+  body section#banner figure img {
+    height: 175%;
+  }
+  body section#about h3 {
+    display: none;
+  }
+  body section#about div#aboutContent {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  body section#about div#aboutContent figure {
+    height: 100%;
+    width: 30rem;
+    margin: 0;
+  }
+  body section#about div#aboutContent figure img {
+    margin-top: 0;
+  }
+  body section#about div#aboutContent div#aboutText h3 {
+    display: flex;
+  }
+  body section#about div#aboutContent div#aboutText p {
+    width: 40rem;
+    margin: 1.5rem auto;
+  }
+}/*# sourceMappingURL=about.css.map */
